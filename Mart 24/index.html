@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+</script>
+	<meta charset="UTF-8">
+	<title>24 mart</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<p>Drag the W3Schools image into the rectangle:</p>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<img id="drag1" src="images/alma.png" draggable="true" ondragstart="drag(event)" width="336" height="69">
+
+</body>
+	<div class="wrapper">
+		<div class="alma" ><img src="images/alma.png" width="100px;" height="100px;"></div>
+		<div class="vedre"><img src="images/vedre.png " width="300px;
+	" height="300px;"></div>
+	</div>
+		
+</body>
+</html>

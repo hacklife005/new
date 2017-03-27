@@ -1,0 +1,19 @@
+/*.wrapper{
+	margin: 0 auto;
+	width: 1300px;
+	height: 900px;
+	background: lightgray;
+}
+
+.alma{
+	 width: 100px;
+	 height: 100px;
+	 z-index: -10;
+
+}
+.vedre{
+	z-index: 1;
+	position: relative;
+	margin-left: 800px;
+	margin-top: 300px;
+}*/
